@@ -4,12 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 
 // componentes pages
+import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
-import { Graficas1Component } from './graficas1/graficas1.component';
-import { PagesComponent } from './pages.component';
 import { IncrementComponent } from '../components/increment/increment.component';
+import { Graficas1Component } from './graficas1/graficas1.component';
 import { GraphicDonutComponent } from '../components/graphic-donut/graphic-donut.component';
+import { AccountSettingComponent } from './account-setting/account-setting.component';
 
 // modulo shared
 import { SharedModule } from '../shared/shared.module';
@@ -27,6 +28,7 @@ import { ChartsModule } from 'ng2-charts';
 
 
 
+
 @NgModule({
 
     declarations:[
@@ -35,7 +37,8 @@ import { ChartsModule } from 'ng2-charts';
     ProgressComponent,
     Graficas1Component,
     IncrementComponent,
-    GraphicDonutComponent
+    GraphicDonutComponent,
+    AccountSettingComponent
 
     ],
     // exportar los componentes a otros

@@ -14,6 +14,12 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 
 
+// servicios
+
+// traidos del service.module.ts
+import { ServiceModule} from './services/service.module';
+
+
 
 @NgModule({
   declarations: [
@@ -29,7 +35,7 @@ import { RegisterComponent } from './login/register.component';
     PagesModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServiceModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

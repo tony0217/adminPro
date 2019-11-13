@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { NopagefoundComponent } from '../shared/nopagefound/nopagefound.component';
+import { AccountSettingComponent } from './account-setting/account-setting.component';
 
 
 
@@ -12,18 +13,20 @@ import { NopagefoundComponent } from '../shared/nopagefound/nopagefound.componen
 
 const pagesRoutes: Routes = [
   // ruta principal
-  {path:'', 
+  {path:'',
   component: PagesComponent,
-  // hijos del pages 
+  // hijos del pages
   children:[
-      
+
     {path:'dashboard', component: DashboardComponent},
     {path:'progress', component: ProgressComponent},
     {path:'grafica1', component: Graficas1Component},
+    {path:'account-settings', component: AccountSettingComponent},
+
     {path:'',redirectTo:'/dashboard' , pathMatch: 'full'},
     {path:'**', component: NopagefoundComponent},
- 
-    
+
+
 
   ]
 
@@ -32,7 +35,7 @@ const pagesRoutes: Routes = [
 ];
 
 @NgModule({
-    //forchild: rutas hijas 
+    //forchild: rutas hijas
 
   imports: [RouterModule.forChild(pagesRoutes)],
   exports: [RouterModule]
