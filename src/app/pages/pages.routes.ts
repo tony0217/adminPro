@@ -6,6 +6,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { NopagefoundComponent } from '../shared/nopagefound/nopagefound.component';
 import { AccountSettingComponent } from './account-setting/account-setting.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -21,6 +22,7 @@ const pagesRoutes: Routes = [
     {path:'dashboard', component: DashboardComponent},
     {path:'progress', component: ProgressComponent},
     {path:'grafica1', component: Graficas1Component},
+    {path:'rxjs', component: RxjsComponent},
     {path:'account-settings', component: AccountSettingComponent},
 
     {path:'',redirectTo:'/dashboard' , pathMatch: 'full'},
